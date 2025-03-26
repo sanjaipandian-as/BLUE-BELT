@@ -1,7 +1,7 @@
 class Node:
     def __init__(self,data):
         self.data=data
-        self.pointer=None
+        self.next=None
 class linkedList:
     def __init__(self):
         self.head=None
@@ -11,9 +11,9 @@ class linkedList:
             self.head=newNode
         else:
             cur=self.head
-            while cur.pointer is not None:
-                cur=cur.pointer
-            cur.pointer=newNode
+            while cur.next is not None:
+                cur=cur.next
+            cur.next=newNode
     def print(self):
         if self.head is None:
             print("linked list is empty")
@@ -21,14 +21,14 @@ class linkedList:
             cur=self.head
             while cur is not None:
                 print(cur.data,end=" ")
-                cur=cur.pointer
+                cur=cur.next
             print()
     def sort(self):
         count=[0,0,0]
         cur=self.head
         while cur is not None:
             count[cur.data]+=1 
-            cur=cur.pointer
+            cur=cur.next
         index=0
         cur=self.head
         while cur is not None:
@@ -37,7 +37,7 @@ class linkedList:
             else:
                 cur.data=index
                 count[index]-= 1 
-                cur=cur.pointer
+                cur=cur.next
 obj=linkedList()
 n=int(input())
 a=list(map(int,input().split()))
