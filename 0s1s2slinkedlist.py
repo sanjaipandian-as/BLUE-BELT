@@ -45,5 +45,7 @@ for i in a:
     obj.add(i)
 obj.sort()
 obj.print()
+
+input=n=6, arr=0,2,1,2,0,1
         
             
