@@ -2,7 +2,7 @@ class Node:
     def __init__(self,data):
         self.data=data
         self.next=None
-class linkedList:
+class Linkedlist:
     def __init__(self):
         self.head=None
     def add(self,data):
@@ -15,37 +15,44 @@ class linkedList:
                 cur=cur.next
             cur.next=newNode
     def print(self):
-        if self.head is None:
-            print("linked list is empty")
+        if self.head is  None:
+            print("Linked list is empty")
         else:
             cur=self.head
             while cur is not None:
                 print(cur.data,end=" ")
                 cur=cur.next
             print()
+            
     def sort(self):
-        count=[0,0,0]
-        cur=self.head
-        while cur is not None:
-            count[cur.data]+=1 
-            cur=cur.next
-        index=0
-        cur=self.head
-        while cur is not None:
-            if count[index]==0:
-                index+=1 
+        if not self.head or not self.head.next:
+            return
+        low,mid,high=self.head,self.head,self.head
+        while high.next:
+            high=high.next
+        while mid !=high.next:
+            if mid.data==0:
+                mid.data,low.data=low.data,mid.data
+                low=low.next
+                mid=mid.next
+            elif mid.data==1:
+                mid=mid.next
             else:
-                cur.data=index
-                count[index]-= 1 
-                cur=cur.next
-obj=linkedList()
+                mid.data,high.data=high.data,mid.data
+                high=self.getprev(high)
+        
+    def getprev(self,node):
+        cur=self.head
+        while cur and cur.next !=node:
+            cur=cur.next
+        return cur
+            
+obj=Linkedlist()
 n=int(input())
-a=list(map(int,input().split()))
-for i in a:
+arr=list(map(int,input().split()))
+
+for i in arr:
     obj.add(i)
+
 obj.sort()
 obj.print()
-
-input=n=6, arr=0,2,1,2,0,1
-        
-            
