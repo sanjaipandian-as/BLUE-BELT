@@ -39,3 +39,5 @@ for i in arr:
     obj.add(i)
 obj.duplicate()
 obj.print()
+
+input (n=6) and arr=(1,1,2,3,3,4)
