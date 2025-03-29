@@ -57,4 +57,4 @@ for i in arr:
 obj.sort()
 obj.print()
 
-input (n=5) and arr(1,2,0,1,2,0) 
+input (n=5) and arr(1,2,0,1,2,0) and  ()

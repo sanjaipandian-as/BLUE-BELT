@@ -13,7 +13,7 @@ class Linkedlist:
         else:
             cur=self.head
             while cur.next is not None:
-                cur=cur.next
+                cur=cur.next 
             cur.next=newNode
             newNode.prev=cur
     def print(self):
