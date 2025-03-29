@@ -45,3 +45,5 @@ for i in arr:
     
 obj.doublereverse()
 obj.print()
+
+input (1,2,3,4,5)
