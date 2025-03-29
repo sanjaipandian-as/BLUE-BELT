@@ -50,4 +50,4 @@ obj.deletealloccurences(x)
 obj.print()
 
 
-input (1,2,3,4,5) and arr=q,w,r
+input (1,2,3,4,5)
