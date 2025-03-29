@@ -52,3 +52,5 @@ else:
 
     obj.rearragene_odd_even()
     obj.print()
+
+fake =input (1,2,3,4,5)
