@@ -46,3 +46,5 @@ obj.reverse()
 obj.print()
 
 input (n=5) and arr=(1,2,3,4,5)
+
+fake =input (1,2,3,4,5)
