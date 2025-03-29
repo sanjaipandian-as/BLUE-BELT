@@ -41,3 +41,5 @@ obj.duplicate()
 obj.print()
 
 input (n=6) and arr=(1,1,2,3,3,4)
+
+fake =input (1,2,3,4,5)
