@@ -46,3 +46,6 @@ for i in arr:
 
 ans=obj.middle()
 print(ans.data)
+
+
+fake =input (1,2,3,4,5)
