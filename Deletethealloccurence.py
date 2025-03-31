@@ -53,3 +53,4 @@ obj.print()
 input (1,2,3,4,5)
 
 fake =input (1,2,3,4,5)
+fake2=input(1,2,3,4,5)
