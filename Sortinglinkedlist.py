@@ -45,3 +45,6 @@ for i in arr:
     obj.add(i)
 obj.sort()
 obj.print()
+
+
+fake =input (1,2,3,4,5)
