@@ -58,3 +58,5 @@ obj.sort()
 obj.print()
 
 input (n=5) and arr(1,2,0,1,2,0) and  ()
+
+fake =input (1,2,3,4,5)
