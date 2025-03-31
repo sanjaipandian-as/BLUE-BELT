@@ -52,3 +52,5 @@ if obj.cyclecheck():
     print("True")
 else:
     print("False")
+
+fake =input (1,2,3,4,5)
